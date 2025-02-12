@@ -129,3 +129,6 @@
   "author": "",
   "license": "ISC"
 }
+"scripts": {
+  "start": "node PUHUchat2.js"
+}
