@@ -180,15 +180,12 @@ async function transcribeAndChat() {
 }
 
 setupReadlineInterface();
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 3000; // Render assigns a PORT automatically
+const port = process.env.PORT || 3000; // Use Render's assigned port
 
 app.get('/', (req, res) => {
     res.send('Chatbot is running! 🎙️');
 });
 
-// Start the server
 app.listen(port, () => {
     console.log(`🚀 Server is running on port ${port}`);
 });
